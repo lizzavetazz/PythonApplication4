@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a68af35f-5388-4000-8072-0f494b9cff55</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>a.py</StartupFile>
+    <StartupFile>toofailidega.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="a.py" />
+    <Compile Include="toofailidega.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
