@@ -32,7 +32,7 @@ for i in range(10):    #повторение
 
 def faili_sisu_umberkirjutamine(file:str):
     text=input("Sisesta uus text:")
-    with open(file,""w) as f:
+    with open(file,"w") as f:
         f.write(text+"\n")
 
-faili_sisu_umberkirjutamine(input("Faili nimetus")+".txt)
+faili_sisu_umberkirjutamine(input("TextFile1.txt")

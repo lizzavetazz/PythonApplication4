@@ -1,9 +1,25 @@
+from random import*
 def koik_kasutajad(users,passwords):
     i=0
     for user in users:
-        print(user,end="-")
+        print(users,end="-")
         print(passwords[i])
         i+=1
+
+def loe_failist_listisse(file:str)->list:
+    """Loeme tekst failist ja salvesta järjendisse
+    """
+    f=open(file,"r")
+    list_=[]
+    for stroka in f:
+        list_.append(stroka.strip()) #strip-поиск символа и удаление его, append-добавление к списку
+        f.close()
+        return list_
+    
+def faili_sisu_umberkirjutamine(file:str, list_:list):
+    with open(file,"w") as f:
+        for slovo in list_:
+            f.write(slovo+"\n")
 
 def passautomat()->str:
     """Пароль создается машиной
@@ -51,3 +67,4 @@ def register(users:list,passwords:list):
                             users.append(log)
                             passwords.append(pas)
                             break
+
